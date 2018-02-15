@@ -1,0 +1,15 @@
+fastlane_version "2.68.2"
+
+default_platform :android
+
+platform :android do
+  desc "Runs all the tests"
+  lane :test do
+    gradle(task: "test")
+  end
+
+  desc "Deploy all libs to bintray"
+  lane :deploy do
+    deploy_module_bintray(module_name: "view-helper", should_clean: true)
+  end
+end
