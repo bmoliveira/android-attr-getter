@@ -1,5 +1,5 @@
 # android-view-helper
-Android Kotlin Vew utils
+Android Kotlin Vew utils Version: 0.4
 
 - Attribute Getter
   - Helper to fetch attrs from xml inflated views
@@ -10,3 +10,19 @@ Android Kotlin Vew utils
 - ProgressBarExtensions
    - Helpers for Progressbar coloring
   
+
+Current Maven repo:
+```
+  repositories {
+     maven { url "https://dl.bintray.com/boliveira/maven" }
+  }
+```
+
+Import:
+``` 
+  implementation 'com.broliveira:view-helper:0.4@aar'
+```
+or
+``` 
+  implementation 'com.broliveira:view-helper:0.4'
+```
