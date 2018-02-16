@@ -1,7 +1,7 @@
 object Versions {
   val kotlin = "1.2.21"
   val supportLib = "27.0.2"
-  val buildTools = "27.0.2"
+  val buildTools = "27.0.3"
   val minSDK = 19
   val targetSDK = 26
   val compileSDK = 26
@@ -14,7 +14,7 @@ object Versions {
 }
 
 object PluginVersions {
-  val gradle = "3.0.1"
+  val gradle = "3.1.0-beta3"
   val bintray = "1.7.3"
   val maven = "1.5"
   val dokka = "0.9.15"

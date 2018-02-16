@@ -4,19 +4,14 @@ apply from: 'https://gist.githubusercontent.com/bmoliveira/3d9c28aaaa737aba9ad5f
 
 android {
   compileSdkVersion Versions.targetSDK
-  buildToolsVersion Versions.buildTools
 
   defaultConfig {
     minSdkVersion Versions.minSDK
-    targetSdkVersion Versions.targetSDK
-    testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
   }
 
-  buildTypes {
-    release {
-      minifyEnabled false
-      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-    }
+  // TODO replace with https://issuetracker.google.com/issues/72050365 once released.
+  libraryVariants.all {
+    it.generateBuildConfig.enabled = false
   }
 }
 
