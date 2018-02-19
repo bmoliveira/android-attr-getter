@@ -1,5 +1,5 @@
 # android-view-helper
-Android Kotlin Vew utils Version: 0.4
+Android Kotlin Vew utils Version: 0.5
 
 - Attribute Getter
   - Helper to fetch attrs from xml inflated views
@@ -20,9 +20,9 @@ Current Maven repo:
 
 Import:
 ``` 
-  implementation 'com.broliveira:view-helper:0.4@aar'
+  implementation 'com.broliveira:view-helper:0.5@aar'
 ```
 or
 ``` 
-  implementation 'com.broliveira:view-helper:0.4'
+  implementation 'com.broliveira:view-helper:0.5'
 ```

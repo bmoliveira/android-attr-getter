@@ -113,4 +113,22 @@ interface AttributeGetter {
       ta.recycle()
     }
   }
+
+  fun getResourceID(
+      attributeId: Int,
+      attributeSet: AttributeSet?,
+      context: Context,
+      styleable: IntArray? = defaultStyleable,
+      defStyleAttr: Int = 0,
+      defStyleRes: Int = 0
+  ): Int? {
+    val ta = context.obtainStyledAttributes(attributeSet, styleable, defStyleAttr, defStyleRes)
+    return try {
+      ta.getResourceId(attributeId, Int.MIN_VALUE).let { if (it == Int.MIN_VALUE) null else it }
+    } catch (ignored: Exception) {
+      null
+    } finally {
+      ta.recycle()
+    }
+  }
 }
